@@ -1,0 +1,100 @@
+@import "variables";
+
+.features {
+  background: url(../img/features_bg.png) 50% bottom #fbf8f1 no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.features__inner {
+  max-width: $max-width;
+  margin: auto;
+  padding: 98px 0 122px;
+}
+
+.features__title {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0 0 25px;
+}
+
+.features__intro {
+  font-size: 24px;
+  margin-bottom: 84px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  list-style: none;
+  width: 270px;
+}
+
+.features__item + .features__item {
+
+}
+
+.features__name {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  color: $shade-yellow;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.features__txt {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.features__img {
+  position: relative;
+  margin-bottom: 67px;
+  height: 128px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 69px;
+    margin: auto;
+    height: 3px;
+    background: #8d8d99;
+    bottom: -35px;
+  }
+}
+
+.features__item_support {
+  .features__img {
+    background-image: url("../img/SEO-29.png") ;
+  }
+}
+
+.features__item_cloud {
+  .features__img {
+    background-image: url("../img/SEO-32.png") ;
+  }
+}
+
+.features__item_datatbase {
+  .features__img {
+    background-image: url("../img/SEO-18.png") ;
+  }
+}
+
+.features__item_monitoring {
+  .features__img {
+    background-image: url("../img/SEO-04.png") ;
+  }
+}

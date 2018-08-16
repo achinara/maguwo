@@ -1,0 +1,88 @@
+@import "variables";
+
+.offers {
+  position: relative;
+  background-color: $yellow;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: $dark-blue;
+  }
+
+  &::after {
+    width: 1px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-100%)
+  }
+}
+
+.offer {
+  color: #fff;
+  text-align: center;
+}
+
+.offer__body {
+  padding: 115px 83px 104px;
+}
+
+.offer__inner {
+  max-width: $max-width;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.offer__sign {
+  line-height: 169px;
+  height: 169px;
+}
+
+.offer__title {
+  font-size: 36px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 56px 0 23px;
+}
+
+.offer__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+.offer__more {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 50px;
+  min-height: 50px;
+  min-width: 149px;
+  color: inherit;
+  text-decoration: none;
+  border: 2px solid #fff;
+  box-shadow: inset 0 0 1px #fff;
+  cursor: pointer;
+}
+
+.offer_host {
+  .offer__sign {
+    margin: auto;
+    background: url("../img/webhost.png") no-repeat 50% 50%;
+    background-size: contain;
+  }
+}
+
+.offer_domain {
+  .offer__sign {
+    color: $dark-blue;
+    font-weight: 700;
+    font-size: 132px;
+  }
+}

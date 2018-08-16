@@ -1,3 +1,11 @@
+@import 'variables';
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: $dark-blue;
+}
+
 .main {
   display: block;
 }

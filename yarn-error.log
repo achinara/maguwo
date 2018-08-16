@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/chinara/.nvm/versions/node/v9.11.1/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js add --dev gulp gulp-autoprefixer gulp-base64-inline gulp-clean-css gulp-minify-css gulp-concat gulp-notify gulp-livereload gulp-server-livereload gulp-sass
+
+PATH: 
+  /Users/chinara/.nvm/versions/node/v9.11.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/chinara/projects/practise/maguwo/package.json: Unexpected token / in JSON at position 138
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:109:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "maguwo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Aitkulova <aitkulova.ch@gmail.com>",
+    "license": "MIT"
+  }
+  
+  /*
+  
+  var gulp = require('gulp'),
+    autoprefixer = require('gulp-autoprefixer'),
+    base64 = require('gulp-base64-inline'),
+    cleanCSS = require('gulp-clean-css'),
+    minifyCSS = require('gulp-minify-css'),
+    concat = require('gulp-concat'),
+    notify = require("gulp-notify"),
+    livereload = require('gulp-livereload'),
+    server = require('gulp-server-livereload'),
+    sass = require('gulp-sass');
+  */
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

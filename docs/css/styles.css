@@ -89,7 +89,7 @@ body {
   right: 8px;
   width: 15px;
   height: 8px;
-  background: url(../img/arr_down.png) 50% 50% no-repeat;
+  background: url(../img/arr-down.png) 50% 50% no-repeat;
   cursor: pointer
 }
 .custom-select__list {
@@ -227,7 +227,7 @@ body {
   top: 34px;
   width: 31px;
   height: 30px;
-  background: url(../img/footer_shape.png) no-repeat
+  background: url(../img/footer-shape.png) no-repeat
 }
 .footer__copyright {
   padding-top: 77px;
@@ -388,7 +388,7 @@ body {
   font-size: 132px
 }
 .promo {
-  background: url(../img/promo.png) no-repeat;
+  background: url(../img/promo-bg.png) no-repeat;
   background-size: cover;
   color: #fff
 }

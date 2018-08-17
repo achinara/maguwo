@@ -12,11 +12,21 @@ body {
 .main {
   display: block
 }
+.check-domain__submit,
+.custom-select__view,
+.hover_blue {
+  -webkit-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out
+}
 .check-domain__submit:hover,
 .custom-select__view:hover,
 .hover_blue:hover {
   background: #202242;
-  color: #fff
+  color: #fff;
+  -webkit-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in
 }
 .check-domain {
   background: rgba(255,255,255,.5);
@@ -261,23 +271,47 @@ body {
   color: #202242;
   font-weight: 600;
   text-decoration: none;
-  font-size: 16px
+  font-size: 16px;
+  -webkit-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  transition: color .2s ease-out
 }
 .menu__item:first-child {
   margin-left: 0
 }
 .menu__item.active,
 .menu__item:hover {
+  -webkit-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  transition: color .2s ease-out;
   color: #ffe13e
+}
+.hover_blue,
+.offer__more {
+  -webkit-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out
 }
 .hover_blue:hover,
 .offer__more:hover {
   background: #202242;
-  color: #fff
+  color: #fff;
+  -webkit-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in
+}
+.hover_yellow,
+.offer_host .offer__more {
+  -webkit-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out
 }
 .hover_yellow:hover,
 .offer_host .offer__more:hover {
-  background: #ffe13e
+  background: #ffe13e;
+  -webkit-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in
 }
 .offers {
   position: relative;
@@ -433,10 +467,26 @@ body {
   display: block;
   border-radius: 100%
 }
+.hover_blue {
+  -webkit-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out
+}
 .hover_blue:hover {
   background: #202242;
-  color: #fff
+  color: #fff;
+  -webkit-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in
+}
+.hover_yellow {
+  -webkit-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out
 }
 .hover_yellow:hover {
-  background: #ffe13e
+  background: #ffe13e;
+  -webkit-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in
 }

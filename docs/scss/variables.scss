@@ -5,14 +5,20 @@ $light-grey: #ebebeb;
 $dark-blue: #202242;
 
 .hover_blue {
-  &:hover{
+  transition: background-color .2s ease-out;
+
+  &:hover {
     background: $dark-blue;
     color: white;
+    transition: background-color .2s ease-in;
   }
 }
 
 .hover_yellow {
+  transition: background-color .2s ease-out;
+
   &:hover{
     background: $yellow;
+    transition: background-color .2s ease-in;
   }
 }

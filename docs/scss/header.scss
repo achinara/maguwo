@@ -35,12 +35,14 @@
   font-weight: 600;
   text-decoration: none;
   font-size: 16px;
+  transition: color .2s ease-out;
 
   &:first-child {
     margin-left: 0;
   }
 
   &.active, &:hover {
+    transition: color .2s ease-out;
     color: $yellow;
   }
 }

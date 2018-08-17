@@ -46,12 +46,18 @@
 }
 
 .features__img {
+  display: block;
   position: relative;
   margin-bottom: 67px;
   height: 128px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
+
+  img {
+    vertical-align: top;
+    max-width: 100%;
+  }
 
   &::after {
     content: '';
@@ -63,29 +69,5 @@
     height: 3px;
     background: #8d8d99;
     bottom: -35px;
-  }
-}
-
-.features__item_support {
-  .features__img {
-    background-image: url("../img/SEO-29.png") ;
-  }
-}
-
-.features__item_cloud {
-  .features__img {
-    background-image: url("../img/SEO-32.png") ;
-  }
-}
-
-.features__item_datatbase {
-  .features__img {
-    background-image: url("../img/SEO-18.png") ;
-  }
-}
-
-.features__item_monitoring {
-  .features__img {
-    background-image: url("../img/SEO-04.png") ;
   }
 }

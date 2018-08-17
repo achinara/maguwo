@@ -1,0 +1,18 @@
+$max-width: 1170px;
+$yellow: #ffe13e;
+$shade-yellow: #f4d320;
+$light-grey: #ebebeb;
+$dark-blue: #202242;
+
+.hover_blue {
+  &:hover{
+    background: $dark-blue;
+    color: white;
+  }
+}
+
+.hover_yellow {
+  &:hover{
+    background: $yellow;
+  }
+}

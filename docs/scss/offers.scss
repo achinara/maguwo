@@ -67,6 +67,7 @@
   border: 2px solid #fff;
   box-shadow: inset 0 0 1px #fff;
   cursor: pointer;
+  @extend .hover_blue;
 }
 
 .offer_host {
@@ -74,6 +75,10 @@
     margin: auto;
     background: url("../img/webhost.png") no-repeat 50% 50%;
     background-size: contain;
+  }
+
+  .offer__more {
+    @extend .hover_yellow;
   }
 }
 

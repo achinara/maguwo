@@ -1,0 +1,83 @@
+@import "variables";
+
+.check-domain {
+  background: rgba(255,255,255, .5);
+  padding: 18px;
+  display: inline-flex;
+}
+
+.check-domain__field,
+.custom-select__view,
+.check-domain__submit {
+  display: block;
+  height: 54px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.check-domain__submit {
+  background: $yellow;
+  padding: 0 17px 0 18px;
+  border-left: 1px solid white;
+  color: white;
+  @extend .hover_blue;
+}
+
+.check-domain__field {
+  font-size: 18px;
+  width: 273px;
+  background: white;
+  padding: 0 23px
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select__view {
+  color: #2d2d2d;
+  min-width: 108px;
+  font-size: 18px;
+  font-weight: 600;
+  background: $yellow;
+  padding: 0 30px 0 10px;
+  position: relative;
+  text-align: left;
+
+  @extend .hover_blue;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    right: 8px;
+    width: 15px;
+    height: 8px;
+    background: url('../img/arr_down.png') no-repeat 50% 50%;
+    cursor: pointer;
+  }
+}
+
+.custom-select__list {
+  visibility: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 54px;
+  color: $dark-blue;
+}
+
+.custom-select__item {
+  list-style: none;
+  min-height: 54px;
+  line-height: 54px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 10px;
+  background: $yellow;
+  border-top: 1px solid rgba(123, 123, 123, 0.57);
+}

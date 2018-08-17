@@ -1,5 +1,33 @@
 .promo {
-  height: 794px;
   background: url("../img/promo.png") no-repeat;
   background-size: cover;
+  color: white;
+}
+
+.promo__title {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1;
+}
+
+.promo__inner {
+  height: 794px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.promo__img {
+  display: block;
+  opacity: .8;
+
+  img {
+    vertical-align: top;
+    display: block;
+    max-width: 100%;
+    margin: 42px 0 60px;
+  }
 }

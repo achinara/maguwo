@@ -5,19 +5,17 @@
   display: flex;
 }
 
-.clients__intro {
-  h3 {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    margin: -20px 0 20px 10px;
-  }
+.clients__intro-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin: -20px 0 20px 10px;
+}
 
-  p {
-    color: #adadad;
-    font-size: 16px;
-    line-height: 24px;
-  }
+.clients__intro-text {
+  color: #adadad;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .clients__list {

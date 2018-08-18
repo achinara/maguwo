@@ -397,9 +397,6 @@ body {
     height: 70px
   }
 }
-.logo {
-  display: block
-}
 @media (max-width:767px) {
   .header__inner {
     display: block;
@@ -412,6 +409,9 @@ body {
   .logo {
     margin-bottom: 1rem
   }
+}
+.logo {
+  display: inline-block
 }
 .menu {
   margin-right: 20px;

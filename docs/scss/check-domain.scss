@@ -4,6 +4,10 @@
   background: rgba(255,255,255, .5);
   padding: 18px;
   display: inline-flex;
+
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
 }
 
 .check-domain__field,
@@ -28,7 +32,14 @@
   font-size: 18px;
   width: 273px;
   background: white;
-  padding: 0 23px
+  padding: 0 23px;
+  flex-grow: 1;
+
+  @media (max-width: 767px) {
+    width: calc(100% - 260px);
+    font-size: 16px;
+    padding: 0 15px;
+  }
 }
 
 .custom-select {
@@ -58,6 +69,11 @@
     height: 8px;
     background: url('../img/arr-down.png') no-repeat 50% 50%;
     cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    min-width: 90px;
+    font-size: 16px;
   }
 }
 

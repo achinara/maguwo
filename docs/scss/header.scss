@@ -12,20 +12,57 @@
   &::after {
     content: '';
     position: absolute;
+    top: 0;
     height: 100%;
     right: 331px;
     width: 1px;
     background-color: $light-grey;
   }
+
+  @media (max-width: 1200px) {
+    height: 100px;
+    padding: 0 1.5rem;
+
+    &::after {
+      right: 355px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    height: 70px;
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+    height: auto;
+    padding: 1.5rem 1.5rem 1rem;
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .logo {
   display: block;
+
+  img {
+    vertical-align: top;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 1rem;
+  }
 }
 
 .menu {
   margin-right: 20px;
+  margin-top: 10px;
   display: flex;
+
+  @media (max-width: 1023px) {
+    margin-top: 0;
+  }
 }
 
 .menu__item {
@@ -44,5 +81,9 @@
   &.active, &:hover {
     transition: color .2s ease-out;
     color: $yellow;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 25px;
   }
 }

@@ -1,5 +1,5 @@
 .promo {
-  background: url("../img/promo-bg.png") no-repeat;
+  background: url("../img/promo-bg.png") no-repeat center bottom;
   background-size: cover;
   color: white;
 }
@@ -8,8 +8,13 @@
   font-family: 'Maven Pro', sans-serif;
   font-size: 48px;
   font-weight: 500;
-  margin: 0;
-  line-height: 1;
+  margin: -16px 0 0;
+  line-height: 1.15;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+    font-size: 40px;
+  }
 }
 
 .promo__inner {
@@ -18,16 +23,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 1.5rem;
+
+  @media (max-width: 1200px) {
+    height: 650px;
+  }
 }
 
 .promo__img {
   display: block;
   opacity: .8;
+  margin: 42px 0 60px;
+
+  @media (max-width: 767px) {
+    margin: 30px 0 45px;
+  }
 
   img {
     vertical-align: top;
-    display: block;
     max-width: 100%;
-    margin: 42px 0 60px;
   }
 }

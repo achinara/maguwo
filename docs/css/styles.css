@@ -1,3 +1,10 @@
+.clients__item img,
+.features__img img,
+.logo img,
+.offer__more,
+.promo__img img {
+  vertical-align: top
+}
 .clients__item,
 .features__item,
 .reviews__item {
@@ -35,6 +42,11 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex
 }
+@media (max-width:767px) {
+  .check-domain {
+    padding: 10px
+  }
+}
 .check-domain__field,
 .check-domain__submit,
 .custom-select__view {
@@ -60,7 +72,17 @@ body {
   font-size: 18px;
   width: 273px;
   background: #fff;
-  padding: 0 23px
+  padding: 0 23px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+@media (max-width:767px) {
+  .check-domain__field {
+    width: calc(100% - 260px);
+    font-size: 16px;
+    padding: 0 15px
+  }
 }
 .custom-select {
   position: relative
@@ -77,7 +99,8 @@ body {
 }
 .features,
 .footer,
-.offer {
+.offer,
+.promo__title {
   text-align: center
 }
 .custom-select__view::after {
@@ -91,6 +114,18 @@ body {
   height: 8px;
   background: url(../img/arr-down.png) 50% 50% no-repeat;
   cursor: pointer
+}
+.features__img::after,
+.footer::before {
+  right: 0;
+  content: '';
+  left: 0
+}
+@media (max-width:767px) {
+  .custom-select__view {
+    min-width: 90px;
+    font-size: 16px
+  }
 }
 .custom-select__list {
   visibility: hidden;
@@ -117,14 +152,41 @@ body {
   font-family: 'Maven Pro',sans-serif
 }
 .clients {
-  padding: 98px 0 77px;
+  margin: 98px auto 71px;
   max-width: 1170px;
-  margin: auto;
   display: flex
+}
+@media (max-width:1200px) {
+  .clients {
+    padding: 0 1.5rem
+  }
+}
+@media (max-width:1023px) {
+  .clients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 70px auto 50px
+  }
+}
+@media (max-width:767px) {
+  .clients {
+    margin: 70px auto 40px
+  }
 }
 .clients__intro-title {
   font-size: 36px;
-  margin: -20px 0 20px 10px
+  margin: -9px 0 23px 7px
+}
+@media (max-width:767px) {
+  .clients__intro-title {
+    font-size: 24px;
+    margin-left: 5px
+  }
+  .clients__intro-text {
+    margin-bottom: 30px
+  }
 }
 .clients__intro-text {
   color: #adadad;
@@ -138,28 +200,70 @@ body {
 }
 .clients__item {
   width: 172px;
-  margin-left: 30px
+  margin-left: 28px
 }
 .clients__item img {
-  max-width: 100%;
-  vertical-align: top
+  max-width: 100%
+}
+@media (max-width:1200px) {
+  .clients__item {
+    margin-left: 15px
+  }
+}
+@media (max-width:1023px) {
+  .clients__item {
+    width: 172px;
+    margin-left: 30px
+  }
+  .clients__item:first-child {
+    margin-left: 0
+  }
+}
+@media (max-width:767px) {
+  .clients__item {
+    margin-left: 8px
+  }
 }
 .features {
-  background: url(../img/features_bg.png) 50% bottom no-repeat #fbf8f1;
+  background: url(../img/features-bg.png) 50% bottom no-repeat #fbf8f1;
   background-size: contain
 }
 .features__inner {
   max-width: 1170px;
   margin: auto;
-  padding: 98px 0 122px
+  padding: 100px 0 103px
+}
+@media (max-width:1200px) {
+  .features__inner {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem
+  }
 }
 .features__title {
   font-size: 48px;
-  margin: 0 0 25px
+  margin: 0 0 35px
+}
+@media (max-width:767px) {
+  .features__title {
+    font-size: 40px
+  }
 }
 .features__intro {
   font-size: 24px;
   margin-bottom: 84px
+}
+@media (max-width:1023px) {
+  .features__inner {
+    padding: 50px 0 30px
+  }
+  .features__intro {
+    margin-bottom: 50px
+  }
+}
+@media (max-width:767px) {
+  .features__intro {
+    font-size: 22px
+  }
 }
 .features__list {
   display: -webkit-box;
@@ -174,13 +278,35 @@ body {
 .features__item {
   width: 270px
 }
+@media (max-width:1023px) {
+  .features__list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  .features__item {
+    width: 40%;
+    margin-bottom: 35px
+  }
+}
 .features__name {
   font-family: 'Maven Pro',sans-serif;
   font-weight: 400;
   color: #f4d320;
   font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 22px
+  margin: 30px 0 22px
+}
+@media (max-width:767px) {
+  .features__name {
+    font-size: 25px;
+    margin: 25px 0 15px
+  }
+}
+@media (max-width:480px) {
+  .features__name {
+    font-size: 20px
+  }
 }
 .features__img {
   display: block;
@@ -196,23 +322,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox
 }
-.features__img::after,
-.footer::before {
-  content: '';
-  right: 0;
-  margin: auto;
-  left: 0
-}
 .features__img img {
-  vertical-align: top;
   max-width: 100%
 }
 .features__img::after {
   position: absolute;
   width: 69px;
+  margin: auto;
   height: 3px;
   background: #8d8d99;
   bottom: -35px
+}
+@media (max-width:1023px) {
+  .features__img {
+    margin-bottom: 60px
+  }
+  .features__img::after {
+    bottom: -30px
+  }
 }
 .footer {
   position: relative;
@@ -225,6 +352,7 @@ body {
 .footer::before {
   position: absolute;
   top: 34px;
+  margin: auto;
   width: 31px;
   height: 30px;
   background: url(../img/footer-shape.png) no-repeat
@@ -246,23 +374,48 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
-.header__inner::after,
-.offers::after,
-.offers::before {
-  content: '';
-  height: 100%
-}
 .header__inner::after {
+  content: '';
   position: absolute;
+  top: 0;
+  height: 100%;
   right: 331px;
   width: 1px;
   background-color: #ebebeb
 }
+@media (max-width:1200px) {
+  .header__inner {
+    height: 100px;
+    padding: 0 1.5rem
+  }
+  .header__inner::after {
+    right: 355px
+  }
+}
+@media (max-width:1023px) {
+  .header__inner {
+    height: 70px
+  }
+}
 .logo {
   display: block
 }
+@media (max-width:767px) {
+  .header__inner {
+    display: block;
+    height: auto;
+    padding: 1.5rem 1.5rem 1rem
+  }
+  .header__inner::after {
+    content: none
+  }
+  .logo {
+    margin-bottom: 1rem
+  }
+}
 .menu {
   margin-right: 20px;
+  margin-top: 10px;
   display: flex
 }
 .menu__item {
@@ -319,7 +472,9 @@ body {
 }
 .offers::after,
 .offers::before {
+  content: '';
   position: absolute;
+  height: 100%;
   width: 50%;
   top: 0;
   left: 0;
@@ -343,6 +498,22 @@ body {
 .offer__body {
   padding: 115px 83px 104px
 }
+@media (max-width:1023px) {
+  .menu {
+    margin-top: 0
+  }
+  .offer__body {
+    padding: 90px 55px 80px
+  }
+}
+@media (max-width:767px) {
+  .menu__item {
+    margin-left: 25px
+  }
+  .offer__body {
+    padding: 50px 20px
+  }
+}
 .offer__inner {
   max-width: 1170px;
   margin: auto;
@@ -351,20 +522,43 @@ body {
   display: flex
 }
 .offer__sign {
-  line-height: 169px;
   height: 169px
+}
+@media (max-width:1023px) {
+  .offer__sign {
+    height: 120px
+  }
+}
+@media (max-width:480px) {
+  .offer__sign {
+    font-size: 80px
+  }
 }
 .offer__title {
   font-size: 36px;
-  line-height: 24px;
+  line-height: 1;
   font-weight: 600;
-  margin: 56px 0 23px
+  margin: 52px 0 14px
+}
+@media (max-width:1200px) {
+  .offer__title {
+    font-size: 30px;
+    margin-top: 50px
+  }
+}
+@media (max-width:767px) {
+  .offer__sign {
+    height: 90px
+  }
+  .offer__title {
+    font-size: 22px;
+    margin-top: 45px
+  }
 }
 .offer__text {
   margin-bottom: 36px
 }
 .offer__more {
-  vertical-align: top;
   display: inline-block;
   font-size: 18px;
   line-height: 50px;
@@ -377,18 +571,53 @@ body {
   box-shadow: inset 0 0 1px #fff;
   cursor: pointer
 }
+@media (max-width:600px) {
+  .offer__title {
+    font-size: 18px;
+    margin-top: 36px
+  }
+  .offer__more {
+    min-height: 40px;
+    min-width: 110px;
+    line-height: 40px
+  }
+}
 .offer_host .offer__sign {
   margin: auto;
   background: url(../img/webhost.png) 50% 50% no-repeat;
   background-size: contain
 }
 .offer_domain .offer__sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #202242;
   font-weight: 700;
   font-size: 132px
 }
+@media (max-width:1023px) {
+  .offer_domain .offer__sign {
+    font-size: 100px
+  }
+}
+@media (max-width:767px) {
+  .offer_domain .offer__sign {
+    font-size: 80px
+  }
+}
+@media (max-width:480px) {
+  .offer_domain .offer__sign {
+    font-size: 60px
+  }
+}
 .promo {
-  background: url(../img/promo-bg.png) no-repeat;
+  background: url(../img/promo-bg.png) center bottom no-repeat;
   background-size: cover;
   color: #fff
 }
@@ -396,8 +625,8 @@ body {
   font-family: 'Maven Pro',sans-serif;
   font-size: 48px;
   font-weight: 500;
-  margin: 0;
-  line-height: 1
+  margin: -16px 0 0;
+  line-height: 1.15
 }
 .promo__inner {
   height: 794px;
@@ -413,21 +642,36 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column
+  flex-direction: column;
+  padding: 0 1.5rem
 }
 .promo__img {
   display: block;
-  opacity: .8
+  opacity: .8;
+  margin: 42px 0 60px
+}
+@media (max-width:767px) {
+  .promo__img {
+    margin: 30px 0 45px
+  }
 }
 .promo__img img {
-  vertical-align: top;
-  display: block;
-  max-width: 100%;
-  margin: 42px 0 60px
+  max-width: 100%
 }
 .reviews {
   max-width: 1170px;
-  margin: 0 auto 110px
+  margin: 0 auto 46px
+}
+@media (max-width:1200px) {
+  .promo__title {
+    font-size: 40px
+  }
+  .promo__inner {
+    height: 650px
+  }
+  .reviews {
+    padding: 0 1.5rem
+  }
 }
 .reviews__list {
   padding: 0;
@@ -439,17 +683,37 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
+.reviews__item + .reviews__item {
+  margin-left: 20px
+}
+@media (max-width:1023px) {
+  .reviews__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .reviews__item + .reviews__item {
+    margin-left: 0
+  }
+}
 .review {
   width: 372px;
   padding: 25px 22px;
   color: #696969;
   background: #faf9f9;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
+  margin-bottom: 60px
+}
+@media (max-width:1200px) {
+  .review {
+    width: auto
+  }
 }
 .review__text {
   font-style: italic;
-  margin: 0 0 18px;
+  margin: 0 0 13px;
   color: #a4a4a4
 }
 .review__author {
@@ -458,7 +722,7 @@ body {
 }
 .review__avatar {
   position: absolute;
-  right: 26px;
+  right: 7px;
   top: 0;
   width: 89px;
   height: 89px

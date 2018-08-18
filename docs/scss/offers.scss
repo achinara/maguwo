@@ -1,5 +1,4 @@
 @import "variables";
-
 .offers {
   position: relative;
   background-color: $yellow;
@@ -30,6 +29,14 @@
 
 .offer__body {
   padding: 115px 83px 104px;
+
+  @media (max-width: 1023px) {
+    padding: 90px 55px 80px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 20px 50px;
+  }
 }
 
 .offer__inner {
@@ -40,15 +47,41 @@
 }
 
 .offer__sign {
-  line-height: 169px;
   height: 169px;
+
+  @media (max-width: 1023px) {
+    height: 120px;
+  }
+
+  @media (max-width: 767px) {
+    height: 90px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 80px;
+  }
 }
 
 .offer__title {
   font-size: 36px;
-  line-height: 24px;
+  line-height: 1;
   font-weight: 600;
-  margin: 56px 0 23px;
+  margin: 52px 0 14px;
+
+  @media (max-width: 1200px) {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+    margin-top: 45px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+    margin-top: 36px;
+  }
 }
 
 .offer__text {
@@ -68,6 +101,12 @@
   box-shadow: inset 0 0 1px #fff;
   cursor: pointer;
   @extend .hover_blue;
+
+  @media (max-width: 600px) {
+    min-height: 40px;
+    min-width: 110px;
+    line-height: 40px;
+  }
 }
 
 .offer_host {
@@ -84,8 +123,23 @@
 
 .offer_domain {
   .offer__sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $dark-blue;
     font-weight: 700;
     font-size: 132px;
+
+    @media (max-width: 1023px) {
+      font-size: 100px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 80px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 60px;
+    }
   }
 }

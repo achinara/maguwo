@@ -1,7 +1,7 @@
 @import 'variables';
 
 .header__inner {
-  height: 147px;
+  padding: 58px 0 56px;
   position: relative;
   max-width: $max-width;
   align-items: center;
@@ -20,22 +20,15 @@
   }
 
   @media (max-width: 1200px) {
-    height: 100px;
-    padding: 0 1.5rem;
+    padding: 20px 1.5rem 19px;
 
     &::after {
       right: 355px;
     }
   }
 
-  @media (max-width: 1023px) {
-    height: 70px;
-  }
-
   @media (max-width: 767px) {
     display: block;
-    height: auto;
-    padding: 1.5rem 1.5rem 1rem;
 
     &::after {
       content: none;
@@ -45,37 +38,33 @@
 
 .logo {
   display: inline-block;
+  margin-right: 30px;
 
   img {
     vertical-align: top;
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
   }
 }
 
 .menu {
-  margin-right: 20px;
-  margin-top: 10px;
   display: flex;
-
-  @media (max-width: 1023px) {
-    margin-top: 0;
-  }
+  flex-wrap: wrap;
 }
 
 .menu__item {
   text-transform: uppercase;
-  margin-left: 36px;
+  margin: 10px 36px 0 0;
   color: #202242;
   font-weight: 600;
   text-decoration: none;
   font-size: 16px;
   transition: color .2s ease-out;
 
-  &:first-child {
-    margin-left: 0;
+  &:last-child {
+    margin-right: 20px;
   }
 
   &.active, &:hover {
@@ -84,6 +73,6 @@
   }
 
   @media (max-width: 767px) {
-    margin-left: 25px;
+    margin-right: 25px;
   }
 }

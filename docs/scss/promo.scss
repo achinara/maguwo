@@ -1,46 +1,48 @@
 .promo {
-  background: url("../img/promo-bg.png") no-repeat center bottom;
-  background-size: cover;
+  background: url("../img/promo-bg.png") no-repeat center bottom /cover;
   color: white;
 }
 
 .promo__title {
+  margin: 0 0 40px;
   font-family: 'Maven Pro', sans-serif;
   font-size: 48px;
   font-weight: 500;
-  margin: -16px 0 0;
-  line-height: 1.15;
+  line-height: 1;
   text-align: center;
 
   @media (max-width: 1200px) {
     font-size: 40px;
   }
+
 }
 
 .promo__inner {
-  height: 794px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 1.5rem;
+  padding: 217px 1.5rem 229px;
 
-  @media (max-width: 1200px) {
-    height: 650px;
+  @media (max-width: 1023px) {
+    padding: 170px 1.5rem 195px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 100px 1.5rem 110px;
   }
 }
 
 .promo__img {
   display: block;
   opacity: .8;
-  margin: 42px 0 60px;
-
-  @media (max-width: 767px) {
-    margin: 30px 0 45px;
-  }
+  margin: 0 0 59px;
 
   img {
     vertical-align: top;
     max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
   }
 }

@@ -9,7 +9,7 @@
 .features__inner {
   max-width: $max-width;
   margin: auto;
-  padding: 100px 0 103px;
+  padding: 89px 0 103px;
 
   @media (max-width: 1200px) {
     padding-right: 1.5rem;
@@ -25,7 +25,8 @@
   font-size: 48px;
   font-weight: 500;
   font-family: 'Maven Pro', sans-serif;
-  margin: 0 0 35px;
+  margin: 0 0 21px;
+  line-height: 1;
 
   @media (max-width: 767px) {
     font-size: 40px;
@@ -34,7 +35,8 @@
 
 .features__intro {
   font-size: 24px;
-  margin-bottom: 84px;
+  line-height: 1;
+  margin: 0 0 84px;
 
   @media (max-width: 1023px) {
     margin-bottom: 50px;
@@ -43,6 +45,10 @@
   @media (max-width: 767px) {
     font-size: 22px;
   }
+}
+
+.features__txt {
+  line-height: 24px;
 }
 
 .features__list {
@@ -72,7 +78,7 @@
   font-weight: 400;
   color: $shade-yellow;
   font-size: 30px;
-  margin: 30px 0 22px;
+  margin: 30px 0 18px;
 
   @media (max-width: 767px) {
     font-size: 25px;
@@ -87,14 +93,12 @@
 .features__img {
   display: block;
   position: relative;
-  margin-bottom: 67px;
+  margin-bottom: 62px;
   height: 128px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
 
   img {
     vertical-align: top;
+    max-height: 100%;
     max-width: 100%;
   }
 

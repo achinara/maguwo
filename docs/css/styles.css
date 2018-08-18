@@ -19,6 +19,9 @@ body {
 .main {
   display: block
 }
+.wrap {
+  min-width: 479px
+}
 .check-domain__submit,
 .custom-select__view,
 .hover_blue {
@@ -493,6 +496,7 @@ body {
   transform: translateX(-100%)
 }
 .offer {
+  width: 50%;
   color: #fff
 }
 .offer__body {

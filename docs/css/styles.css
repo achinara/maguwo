@@ -348,7 +348,7 @@ body {
 }
 .footer {
   position: relative;
-  min-height: 164px;
+  padding: 77px 0 75px;
   background: #202242;
   color: #fff;
   -webkit-box-sizing: border-box;
@@ -363,7 +363,6 @@ body {
   background: url(../img/footer-shape.png) no-repeat
 }
 .footer__copyright {
-  padding-top: 77px;
   margin: 0
 }
 .header__inner {
@@ -709,11 +708,12 @@ body {
 .review {
   width: 372px;
   padding: 25px 22px;
+  margin: 0 0 60px;
+  line-height: 24px;
   color: #696969;
   background: #faf9f9;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-bottom: 60px
+  box-sizing: border-box
 }
 @media (max-width:1200px) {
   .review {
@@ -723,7 +723,8 @@ body {
 .review__text {
   font-style: italic;
   margin: 0 0 13px;
-  color: #a4a4a4
+  color: #a4a4a4;
+  line-height: 24px
 }
 .review__author {
   font-size: 16px;
